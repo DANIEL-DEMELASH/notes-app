@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+    <title>My Notes</title>
+</head>
+<body>
+    <div class="title">
+        <h2>My Notes</h2>
+        <button id="new">New</button>
+    </div>
+    <div id="notes">
+        
+    </div>
+    <div id="newModal">
+        <div class="container">
+            <button id="cancelNewModal">x</button>
+            <h3>New Note</h3>
+            <input type="text" id="titleText" placeholder="write your title here..">
+            <textarea cols="120" rows="10" id="newNote" placeholder="write your note here.."></textarea>
+            <div class="newActions">
+                <button id="save">Save</button>
+                <button id="discard">Discard</button>
+            </div>
+        </div>
+    </div>
+    <div id="editModal">
+        <div class="container">
+            <button id="cancelEditModal">x</button>
+            <h3>Edit Note</h3>
+            <input type="text" id="editTitleText" placeholder="your title here..">
+            <textarea cols="120" rows="10" id="editNote" placeholder="your note here.."></textarea>
+            <div class="newActions">
+                <button id="update">Update</button>
+                <button id="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
